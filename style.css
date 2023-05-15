@@ -6,7 +6,6 @@
     background-color: #1F2937;
     padding: 10px;
     display: flex;
-
 }
 
 .header-left {
@@ -78,4 +77,35 @@ button:hover {
 
 button:active {
     font-size: 18px;
+}
+
+/* Style for the images section */
+
+.ingred-head h1 {
+    font-size: 36px;
+    color: #1F2937;
+    font-weight: bolder;
+    text-align: center;
+    margin: 30px;
+}
+
+.ingredients {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.ingredients p {
+    color: #1F2937;
+    font-size: 18px;
+    text-align: center;
+    width: 200px;
+}
+
+.ingredients img {
+    width: 200px;
+    border: 2px solid #3882f6;
+    padding: 15px;
+    border-radius: 10px; 
 }

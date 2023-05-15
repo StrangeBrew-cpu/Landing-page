@@ -5,15 +5,21 @@
 .header {
     background-color: #1F2937;
     padding: 10px;
-}
-
-.menubar {
     display: flex;
-    align-items: center;
-    justify-content: space-around;
+
 }
 
-.header img {
+.header-left {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+}
+
+.logo {
+    height: 60px;
+}
+
+.header-left img {
     width: 75px;
     height: 75px;
 }
@@ -22,31 +28,25 @@
     display: flex;
     list-style-type: none;
     justify-content: space-between;
-    gap: 20px;
-    flex-grow: 0;
-    flex-shrink: 0;
-    flex-basis: auto;
+    gap: 10px;
+    height: 60px;
 }
 
 a, p {
-    font-size: 18pt;
+    font-size: 18px;
     color: #e5e7eb;
 }
+
 a {    
     text-decoration: none;
 }
 
-.hero {
+.header-right {
     display: flex;
-    align-items: center;
-    justify-content: space-around;
-    flex-shrink: 1;
+    flex-direction: column;
 }
 
 .text {
-    display: flex;
-    flex-flow: column wrap;
-    width: 50%;
 }
 
 h1 {
@@ -56,8 +56,26 @@ h1 {
 }
 
 
-.hero img {
+.header-right img {
     width: 300px;
     height: auto;
+    align-self: flex-end;
+
 }
 
+.header button {
+    background-color: #3882f6;
+    color: #E5E7EB;
+    padding: 10px;
+    font-weight: bolder;
+    border-radius: 10px;
+    border: none;
+}
+
+button:hover {
+    background-color: #6a9ae7;
+}
+
+button:active {
+    font-size: 18px;
+}
